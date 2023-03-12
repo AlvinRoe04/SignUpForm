@@ -9,13 +9,13 @@
     <body>
         <div class="main-container"> 
             <div class="pitch">
-                <p>Random text that will be much longer once I decide to rewrite this.</p>
-                <p>Another bit of text.</p>
+                <p>This isn't about what you can do for me. This isn't about what you can do at all. When it comes to this, you cannot do anything. You get angry. Then, what is this? What do you want from me? What can I do?</p>
+                <p>I don't know. I'm just writing random stuff.</p>
             </div>  
             
             <div class="form">
                 <h2>Let's do this!</h2>
-                <form id="customer-info">
+                <form id="customer-info" method="post">
                     <div>
                         <label for="first-name">First Name</label>
                         <input type="text" id="first-name" name="first-name">
@@ -25,33 +25,33 @@
                         <label for="last-name">Last Name</label>
                         <input type="text" id="last-name" name="last-name">
                     </div>
-                    
+
                     <div>
                         <label for="email">Email</label>
                         <input type="email" id="email" name="email">
                     </div>
-                    
+
                     <div>
                         <label for="phone">Phone Number</label>
                         <input type="tel" id="phone" name="phone">
                     </div>
-                    
+
                     <div>
                         <label for="password">Password</label>
                         <input type="password" id="password" name="password">
                     </div>
-                    
+
                     <div>
                         <label for="confirm-password">Confirm Password</label>
                         <input type="password" id="confirm-password" name="confirm-password">
                     </div>
-                    
+
                 </form>
             </div>
 
             <div class="submit">
-                <button type="submit" form="customer-info">Create Account</button>
-                
+                <button class="accountButton" type="submit" form="customer-info">Create Account</button> 
+                <p>Already have an account?<a href="google.com">Log in</a> here.</p>               
             </div>
         </div>
     </body>

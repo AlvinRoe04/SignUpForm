@@ -9,6 +9,7 @@ h2 {
     font-size: calc(16px + 1.1vh);
 }
 
+
 .main-container {
     display: grid;
     background-image: url(https://images.unsplash.com/photo-1678510131367-df8d6c61b17e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2000&q=80);
@@ -17,24 +18,41 @@ h2 {
     grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
 }
 
+.main-container * {
+    padding-left: 1%;
+}
+
 .main-container .pitch {
-    background-color: antiquewhite;
+    background-color: rgba(70, 54, 94, .9);
+    color: rgb(156, 147, 171);
     grid-column-start: 2;
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.main-container .pitch p {    
+    font-size: calc(12px + 1vh);
+    margin-bottom: 4%;
+    margin-right: 4%;
 }
 
 .main-container .form {
-    background-color: aliceblue;
+    background-color: rgba(87, 49, 90, .9);
+    color: rgb(220, 186, 198);
     grid-column-start: 2;
     grid-column-end: 4;
     grid-row-start: 2;
     grid-row-end: 3;
+    filter: drop-shadow(.5rem 0 1rem black);
 }
 
 .main-container .submit {
-    background-color: antiquewhite;
+    background-color: rgba(70, 54, 94, .9);
+    color: rgb(156, 147, 171);
     grid-column-start: 2;
     grid-column-end: 4;
     grid-row-start: 3;
@@ -55,6 +73,27 @@ h2 {
 }
 .form form div input {
     font-size: calc(12px + 1vh);
-    width: 70%;
-    
+    width: 70%;   
+}
+.accountButton {
+    margin-top: 2%;
+    background-color: rgb(87, 49, 90);
+    color: rgb(220, 186, 198);
+    padding: .8rem;
+    font-size: calc(14px + 1vh);
+    filter: drop-shadow(0 0 .3rem black);
+    border-radius: 8px;
+}
+
+.accountButton:hover { 
+    background-color: rgb(100, 36, 59);
+}
+
+.submit p {
+    margin-top: 2%;
+}
+
+a {
+    color: rgb(220, 186, 198);
+    text-decoration:none;
 }
